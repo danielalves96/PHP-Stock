@@ -70,7 +70,7 @@
 
         <div style="text-align: right; margin-top:20px;">
             <a href="adicionar_produto.php" role="button" class="btn btn-success btn-sm">Cadastrar produto</a>
-            <a href="index.php" role="button" class="btn btn-primary btn-sm">Voltar para o menu</a>
+            <a href="menu.php" role="button" class="btn btn-primary btn-sm">Voltar ao menu</a>
         </div>
 
     </div>

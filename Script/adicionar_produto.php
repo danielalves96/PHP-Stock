@@ -80,7 +80,7 @@
                 </select>
             </div>
             <div style="text-align: right;">
-                <a href="index.php" role="button" class="btn btn-primary btn-sm">Voltar</a>
+                <a href="menu.php" role="button" class="btn btn-primary btn-sm">Voltar ao menu</a>
                 <button type="submit" id="botao" class="btn btn-success btn-sm">Cadastrar</button>
             </div>
         </form>

@@ -23,7 +23,7 @@ $inserir = mysqli_query($conexao, $sql);
     </center>
     <div style="padding-top: 20px;">
         <center>
-            <a href="index.php" role="button" class="btn btn-primary btn-sm">Voltar ao início</a>
+            <a href="menu.php" role="button" class="btn btn-primary btn-sm">Voltar ao menu</a>
         </center>
     </div>
 

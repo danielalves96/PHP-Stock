@@ -12,45 +12,56 @@
 <body>
 
     <div class="container" style="margin-top: 40px">
-
         <center>
-            <h3>Lista de categorias</h3>
+            <h3>Aprovar usuários</h3>
         </center>
         <br>
         <br>
         <center>
-            <table id="table_id" class="table">
+            <table id="table_id" class="table table-bordered">
                 <thead>
                     <tr>
-                        <th scope=" col">Nome da categoria</th>
-                <th scope="col">
-                    <center>Ação</center>
-                </th>
-                </tr>
+                        <th scope=" col">Nome</th>
+                        <th scope=" col">E-mail</th>
+                        <th scope="col">
+                            <center>Aprovar como</center>
+                        </th>
+                    </tr>
                 </thead>
-
 
                 <?php
             include 'conexao.php';
-            $sql = "SELECT * FROM `categoria`";
+            $sql = "SELECT * FROM `usuarios` WHERE status = 'Inativo'";
             $busca = mysqli_query($conexao,$sql);
 
             while ($array = mysqli_fetch_array($busca)) {
                 
-                $id_categoria = $array['id_categoria'];
-                $categoria = $array['categoria'];
-
+                $id_usuario = $array['id_usuario'];
+                $nome = $array['nome_usuario'];
+                $mail = $array['mail_usuario'];
+                $nome = $array['nome_usuario'];
             ?>
                 <tr>
-                    <td> <?php echo $categoria ?> </td>
+                    <td> <?php echo $nome ?> </td>
+                    <td> <?php echo $mail ?> </td>
 
                     <td>
                         <center>
-                            <a href="editar_categoria.php?id=<?php echo $id_categoria ?>" role="button"
-                                class="btn btn-warning btn-sm"><i class="far fa-edit"></i>&nbsp; Editar</a>
+                            <a href="_aprovar_usuario.php?id=<?php echo $id_usuario ?>&nivel=1" role="button"
+                                class="btn btn-success btn-sm"><i class="fas fa-user-shield"></i>&nbsp;
+                                Administrador</a>
 
-                            <a href="deletar_categoria.php?id=<?php echo $id_categoria ?>" role="button"
-                                class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i>&nbsp; Excluir</a>
+                            <a href="_aprovar_usuario.php?id=<?php echo $id_usuario ?>&nivel=2" role="button"
+                                class="btn btn-warning btn-sm"><i class="fas fa-user-alt"></i>&nbsp;
+                                Usuário</a>
+
+                            <a href="_aprovar_usuario.php?id=<?php echo $id_usuario ?>&nivel=3" role="button"
+                                class="btn btn-primary btn-sm"><i class="fas fa-user-tag"></i>&nbsp;
+                                Conferente</a>
+
+                            <a href="_deletar_usuario.php?id=<?php echo $id_usuario ?>&nivel=<?php echo nivel ?>"
+                                role="button" class="btn btn-danger btn-sm"><i class="fas fa-ban"></i>&nbsp;
+                                Inadimitir</a>
                         </center>
                     </td>
                     <?php } ?>
@@ -60,8 +71,8 @@
         </center>
 
         <div style="text-align: right; margin-top:20px;">
-            <a href="adicionar_categoria.php" role="button" class="btn btn-success btn-sm">Cadastrar categoria</a>
-            <a href="index.php" role="button" class="btn btn-primary btn-sm">Voltar para o menu</a>
+            <a href="cadastro_usuario.php" role="button" class="btn btn-success btn-sm">Cadastrar novo usuário</a>
+            <a href="menu.php" role="button" class="btn btn-primary btn-sm">Voltar para o menu</a>
         </div>
 
     </div>

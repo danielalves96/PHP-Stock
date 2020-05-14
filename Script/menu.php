@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu CRUD</title>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -15,7 +14,7 @@
 
     <nav class="navbar navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.php" style="font-weight: 700;"><i class="fab fa-php"></i>&nbsp; Daniel
+            <a class="navbar-brand" href="menu.php" style="font-weight: 700;"><i class="fab fa-php"></i>&nbsp; Daniel
                 Luiz Alves</a>
         </div>
     </nav>
@@ -27,7 +26,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-cart-plus"></i>&nbsp;Adicionar produto</h5>
                         <p class="card-text">Adicione novos produtos em seu estoque.</p>
-                        <a href="adicionar_produto.php" class="btn btn-primary">Cadastrar produto</a>
+                        <a href="adicionar_produto.php" class="btn btn-sm btn-primary">Cadastrar produto</a>
                     </div>
                 </div>
             </div>
@@ -36,7 +35,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-clipboard-list"></i>&nbsp;Lista de produtos</h5>
                         <p class="card-text">Edite, liste e adicione exclua seus produtos.</p>
-                        <a href="listar_produtos.php" class="btn btn-primary">Listar produtos</a>
+                        <a href="listar_produtos.php" class="btn btn-sm btn-primary">Listar produtos</a>
                     </div>
                 </div>
             </div>
@@ -45,7 +44,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-box"></i>&nbsp;Adicionar categorias</h5>
                         <p class="card-text">Adicione novas categorias para seus produtos.</p>
-                        <a href="adicionar_categoria.php" class="btn btn-primary">Adicionar categoria</a>
+                        <a href="adicionar_categoria.php" class="btn btn-sm btn-primary">Adicionar categoria</a>
                     </div>
                 </div>
             </div>
@@ -54,7 +53,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><i class="far fa-id-card"></i>&nbspAdicionar Fornecedores</h5>
                         <p class="card-text">Adicione novos fornecedores de seus produtos.</p>
-                        <a href="adicionar_fornecedor.php" class="btn btn-primary">Adicionar fornecedor</a>
+                        <a href="adicionar_fornecedor.php" class="btn btn-sm btn-primary">Adicionar fornecedor</a>
                     </div>
                 </div>
             </div>
@@ -63,16 +62,25 @@
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-pencil-alt"></i>&nbsp Listar categorias</h5>
                         <p class="card-text">Edite, liste e adicione exclua suas categorias cadastradas.</p>
-                        <a href="listar_categorias.php" class="btn btn-primary">Listar categoria</a>
+                        <a href="listar_categorias.php" class="btn btn-sm btn-primary">Listar categoria</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6" style="margin-top: 25px;">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-user-edit"></i></i>&nbsp Listar fornecedores</h5>
+                        <h5 class="card-title"><i class="fas fa-user-edit"></i>&nbsp Listar fornecedores</h5>
                         <p class="card-text">Edite, liste e adicione exclua seus fornecedores ja cadastrados.</p>
-                        <a href="#" class="btn btn-secondary disabled" aria-disabled="true">Em breve</a>
+                        <a href="#" class="btn btn-sm btn-secondary disabled" aria-disabled="true">Em breve</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 25px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-user-check"></i>&nbsp Aprovar usuários</h5>
+                        <p class="card-text">Aprove os usuários que se cadastraram no sistema por meio externo.</p>
+                        <a href="aprovar_usuario.php" class="btn btn-sm btn-primary" >Exibir lista</a>
                     </div>
                 </div>
             </div>

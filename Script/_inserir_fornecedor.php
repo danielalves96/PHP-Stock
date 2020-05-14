@@ -2,9 +2,9 @@
 
 include 'conexao.php';
 
-$catproduto = $_POST['catproduto'];
+$fornecedor = $_POST['fornecedor'];
 
-$sql = "INSERT INTO `categoria`(`categoria`) VALUES ('$catproduto')";
+$sql = "INSERT INTO `fornecedor`(`nome_fornecedor`) VALUES ('$fornecedor')";
 $inserir = mysqli_query($conexao, $sql);
 
 ?>
@@ -14,11 +14,11 @@ $inserir = mysqli_query($conexao, $sql);
 
 <div class="container" style="widith: 500px; margin-top: 30px;">
     <center>
-        <h4>Categoria adicionada com sucesso!</h4>
+        <h4>Fornecedor adicionado com sucesso!</h4>
     </center>
     <div style="padding-top: 20px;">
         <center>
-            <a href="index.php" role="button" class="btn btn-primary btn-sm">Voltar ao início</a>
+            <a href="menu.php" role="button" class="btn btn-primary btn-sm">Voltar ao menu</a>
         </center>
     </div>
 
