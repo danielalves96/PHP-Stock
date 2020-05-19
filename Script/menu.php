@@ -12,6 +12,18 @@
 
 <body>
 
+<?php 
+
+session_start();
+
+$usuario = $_SESSION['usuario'];
+
+if(!isset($_SESSION['usuario'])){
+    header('Location: index.php');
+}
+
+?>
+
     <nav class="navbar navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="menu.php" style="font-weight: 700;"><i class="fab fa-php"></i>&nbsp; Daniel

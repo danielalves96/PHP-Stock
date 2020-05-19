@@ -30,7 +30,7 @@
             <img src="assets/php.png" alt="logo" width="200px" style="margin-bottom:20px;">
             <h4>Controle de estoque</h4>
         </center>
-        <form action="" style="margin-top:20px;">
+        <form action="index1.php" method="post" style="margin-top:20px;">
             <div class="form-group">
                 <label>Usuário</label>
                 <input type="text" name="usuario" class="form-control" placeholder="Digite seu e-mail"
@@ -41,10 +41,11 @@
                 <input type="password" name="senha" class="form-control" placeholder="Senha" autocomplete="off"
                     required>
             </div>
-        </form>
+        
         <div style="text-align:right;">
             <button class=" btn btn-sm btn-success" type="submit">Entrar</button>
         </div>
+        </form>
 
     </div>
 

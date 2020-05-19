@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19-Maio-2020 às 21:52
+-- Tempo de geração: 20-Maio-2020 às 00:50
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.4.5
 
@@ -104,7 +104,7 @@ CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
   `nome_usuario` varchar(200) NOT NULL,
   `mail_usuario` varchar(150) NOT NULL,
-  `senha_usuario` varchar(15) NOT NULL,
+  `senha_usuario` varchar(60) NOT NULL,
   `nivel_usuario` int(2) NOT NULL,
   `status` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -114,7 +114,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nome_usuario`, `mail_usuario`, `senha_usuario`, `nivel_usuario`, `status`) VALUES
-(7, 'Daniel', 'daniel@email.com', '827ccb0eea8a706', 3, 'Ativo');
+(11, 'Daniel Luiz', 'daniel.madeireira@gmail.com', 'ca921cb3deea7d57c0d364c5a657a24e', 1, 'Ativo');
 
 --
 -- Índices para tabelas despejadas
@@ -170,7 +170,7 @@ ALTER TABLE `fornecedor`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
