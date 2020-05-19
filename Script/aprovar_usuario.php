@@ -59,7 +59,7 @@
                                 class="btn btn-primary btn-sm"><i class="fas fa-user-tag"></i>&nbsp;
                                 Conferente</a>
 
-                            <a href="_deletar_usuario.php?id=<?php echo $id_usuario ?>&nivel=<?php echo nivel ?>"
+                            <a href="_deletar_usuario.php?id=<?php echo $id_usuario ?>"
                                 role="button" class="btn btn-danger btn-sm"><i class="fas fa-ban"></i>&nbsp;
                                 Inadimitir</a>
                         </center>
