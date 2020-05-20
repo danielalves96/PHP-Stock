@@ -18,6 +18,16 @@
 
 <body>
 
+<?php 
+
+session_start();
+$usuario = $_SESSION['usuario'];
+if(!isset($_SESSION['usuario'])){
+    header('Location: index.php');
+}
+
+?>
+
     <div class="container" style="margin-top: 40px" id="container">
 
         <h3>Formulário de cadastro</h3>

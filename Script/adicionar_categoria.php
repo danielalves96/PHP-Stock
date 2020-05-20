@@ -11,6 +11,16 @@
 
 <body>
 
+<?php 
+
+session_start();
+$usuario = $_SESSION['usuario'];
+if(!isset($_SESSION['usuario'])){
+    header('Location: index.php');
+}
+
+?>
+
     <div class="container" style="margin-top: 40px; width:500px;">
 
         <center>
@@ -27,12 +37,9 @@
                 <a href="menu.php" role="button" class="btn btn-primary btn-sm">Voltar ao menu</a>
                 <button type="submit" id="botao" class="btn btn-success btn-sm">Adicionar</button>
             </div>
-
-            </form>
+        </form>
 
     </div>
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>

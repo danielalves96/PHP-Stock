@@ -12,6 +12,25 @@
 
 <body>
 
+<?php 
+
+session_start();
+
+$usuario = $_SESSION['usuario'];
+
+if(!isset($_SESSION['usuario'])){
+    header('Location: index.php');
+}
+
+include 'conexao.php';
+
+$sql = "SELECT `nivel_usuario` FROM `usuarios` WHERE `mail_usuario` = '$usuario' and `status` = 'Ativo'";
+$buscar = mysqli_query($conexao, $sql);
+$array = mysqli_fetch_array($buscar);
+$nivel = $array['nivel_usuario'];
+
+?>
+
     <div class="container" style="width:500px; margin-top:40px;">
         <center>
             <img src="assets/user.png" alt="logo" width="150px" style="margin-bottom:10px;">
@@ -49,7 +68,7 @@
                 </select>
             </div>
             <div style="text-align:right;">
-                <a href="index.php" role="button" class="btn btn-primary btn-sm">Voltar</a>
+                <a href="menu.php" role="button" class="btn btn-primary btn-sm">Voltar</a>
                 <button class=" btn btn-sm btn-success" type="submit" id="botao">Cadastrar</button>
             </div>
         </form>

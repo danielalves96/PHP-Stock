@@ -11,6 +11,16 @@
 
 <body>
 
+<?php 
+
+session_start();
+$usuario = $_SESSION['usuario'];
+if(!isset($_SESSION['usuario'])){
+    header('Location: index.php');
+}
+
+?>
+
     <div class="container" style="margin-top: 40px">
         <center>
             <h3>Aprovar usuários</h3>
@@ -29,7 +39,7 @@
                     </tr>
                 </thead>
 
-                <?php
+            <?php
             include 'conexao.php';
             $sql = "SELECT * FROM `usuarios` WHERE status = 'Inativo'";
             $busca = mysqli_query($conexao,$sql);
