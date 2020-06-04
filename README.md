@@ -5,8 +5,30 @@ O CRUD-PHP (Estoque de produtos) é um projeto desenvolvido para controle de est
 
 ## Screenshots
 
-<img width="100%" src="">
+<table>
+	<tr>
+		<th width="100%">
+			Web Interface<br>
+		</th>
+	</tr>
+	<tr>
+		<td width="50%">
+			<img width="49.5%" src="https://i.ibb.co/CBYfbnX/home.png">	<img width="49.5%" src="https://i.ibb.co/0mFS5sf/login.png">
+			<br>
+			<img width="49.5%" src="https://i.ibb.co/xF6tWKT/cadastro-prod.png"> <img width="49.5%" src="https://i.ibb.co/0rmxnyF/category-list.png">
+			<br>
+			<img width="49.5%" src="https://i.ibb.co/8xzRbfH/catergory-new.png"> <img width="49.5%" src="https://i.ibb.co/vdLPvbv/fornecedor.png">
+			<br>
+			<center>
+			<img width="49.5%" src="https://i.ibb.co/WK1yFTg/lista.png">
+			<br>
+			</center>
+		</td>
+	</tr>
+</table>
 
+<table>
+  
 ## Features
 
 - Cadastro de produtos, categorias e fornecedores;
@@ -47,10 +69,10 @@ Para o desenvolvimento do projeto, foram ulitizados os seguintes recursos:
 Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será muito apreciada.
 
 1. Faça um Fork do projeto
-2. Crie uma Branch para sua Feature (git checkout -b feature/FeatureIncrivel)
+2. Crie uma Branch para sua Feature (git checkout -b feature/FeatureNova)
 3. Adicione suas mudanças (git add .)
-4. Comite suas mudanças (git commit -m 'Adicionando uma Feature incrível!)
-5. Faça o Push da Branch (git push origin feature/FeatureIncrivel)
+4. Comite suas mudanças (git commit -m 'Adicionando uma Feature nova!)
+5. Faça o Push da Branch (git push origin feature/FeatureNoval)
 6. Abra uma Pull Request
 
 ## Licença
