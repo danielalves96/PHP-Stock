@@ -62,6 +62,8 @@ Para o desenvolvimento do projeto, foram ulitizados os seguintes recursos:
 
 * Coloque os arquivos PHP na pasta “htdocs” dentro da pasta “XAMMP” ou "LAMP";
 
+* Importe o banco de dados disponível na pasta "MySQL";
+
 * Em seu navegador acesse "http://localhost/".
 
 ## Contribuições
