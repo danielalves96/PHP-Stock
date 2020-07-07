@@ -13,14 +13,14 @@ O CRUD-PHP (Estoque de produtos) é um projeto desenvolvido para controle de est
 	</tr>
 	<tr>
 		<td width="50%">
-			<img width="49.5%" src="https://i.ibb.co/CBYfbnX/home.png">	<img width="49.5%" src="https://i.ibb.co/0mFS5sf/login.png">
+			<img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/1.png?raw=true">	<img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/2.png?raw=true">
 			<br>
-			<img width="49.5%" src="https://i.ibb.co/xF6tWKT/cadastro-prod.png"> <img width="49.5%" src="https://i.ibb.co/0rmxnyF/category-list.png">
+			<img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/3.png?raw=true"> <img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/4.png?raw=true">
 			<br>
-			<img width="49.5%" src="https://i.ibb.co/8xzRbfH/catergory-new.png"> <img width="49.5%" src="https://i.ibb.co/vdLPvbv/fornecedor.png">
+			<img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/5.png?raw=true"> <img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/6.png?raw=true">
 			<br>
 			<center>
-			<img width="49.5%" src="https://i.ibb.co/WK1yFTg/lista.png">
+			<img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/7.png?raw=true">
 			<br>
 			</center>
 		</td>
